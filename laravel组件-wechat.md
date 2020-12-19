@@ -807,11 +807,54 @@ echo $w->index();
 
 ### github 管理
 
+详见 github 管理。
+
 1. **创建远程仓库**：
 
-   详见 - github 管理。
+   ```
+   需要注册 github 账号，在右侧通过 new repository 来新建一个仓库。
+   ```
 
 2. **项目添加与提交**：
+
+   ```
+   根据创建的仓库的提示信息来操作，实现项目的远程仓库的推送。
+   
+   步骤：
+       1.git init 
+       2. git add .   「这里有一个警告 可以会略」
+       3. git status  查看是否添加
+       4.git commit -m 'laravel 扩展包 wechat 20201219 提交'   提交描述
+       5.git remote add origin https://github.com/1198746404/wechat-finished.git  设置远程仓库
+       6. git push -u origin master  推送   注意账户和密码 容易错误
+   
+   需要注意提交的是否为 当前账号 -》1.检查 ssh key「设置」-》2.设置 username & password -》3.推送失败 查看推送信息 「git remote -v 不对 则 清除 - git remote rm origin  重新设置」
+   ```
+
+### Composer 管理
+
+1. **提交仓库**：
+
+   ![1608363541665](/1608363541665.png)
+
+2. **检测问题**：
+
+   检测一般主要会出现以下两个问题：
+
+   ```
+   1.包是私有的 需要切换包为public；
+   2.厂商已经存在，修改composr.json 文件中的 厂商名称
+   ```
+
+3. **自动提交**：
+
+   github 中操作：
+
+   ![1608364622216](/1608364622216.png)
+
+   
+
+
 
 
 
