@@ -1,0 +1,17 @@
+{
+    "name": "harry\/wechat",
+    "description": "test wechat",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "sixstar-harry",
+            "email": "2598029911@qq.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Harry\\Wechat\\": "src"
+        }
+    }
+}
